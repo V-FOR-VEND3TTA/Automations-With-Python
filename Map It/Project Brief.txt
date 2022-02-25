@@ -1,0 +1,29 @@
+web browser - Comes with Python and opens a browser to a specific page
+Requests - Downloads files and web pages from the Internet
+Beautiful Soup - Parses HTML
+Selenium - Launches and controls a web browser. Selenium is able to fill in forms and simulate mouse clicks in the browser
+
+# This is what the program does:
+
+- Gets a street address from the command line arguments or clipboard
+- Opens the web browser to the Google Maps page for the address
+
+This means that the code will need to do the following:
+- Read from cmd arguments from sys.argv and
+- Read what is in the clipboard 
+- Call the webbrowser.open() function to open the web browser
+
+The workflow of getting a map on Google without automation is this:
+- Highlight the address
+- Copy the address to the clipboard
+- Open the web browser
+- Go to https://www.google.com/
+- Click the address text field
+- Paste the address text
+- Hit ENTER
+
+The workflow of the automated version
+- Highlight the address
+- Copy the address to the clipboard
+- Run scrape.py
+
